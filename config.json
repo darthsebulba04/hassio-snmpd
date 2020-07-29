@@ -1,0 +1,18 @@
+{
+  "name": "SNMP Server",
+  "version": "1",
+  "slug": "snmp",
+  "description": "SNMP v2c server for monitoring",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "options": {
+    "community": "public"
+  },
+  "schema": {
+    "community": "str"
+  },
+  "ports": {
+    "161/udp": 161
+  }
+}
