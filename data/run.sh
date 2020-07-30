@@ -1,3 +1,20 @@
 #!/usr/bin/with-contenv bashio
 
-/usr/sbin/snmpd
+CONFIG="/etc/snmp/snmpd.conf"
+
+{
+	echo "com2sec readonly default $(bashio::config 'community')"
+	echo "group MyROGroup v2c readonly"
+	echo "view all included .1 80"
+	echo "access MyROGroup ''      any       noauth    exact  all    none   none"
+} > "${CONFIG}"
+
+#bashio::log.info `cat ${CONFIG}`
+bashio::log.info "Starting SNMP server..."
+
+#bashio::log.info `/usr/sbin/snmpd --help`
+
+exec /usr/sbin/snmpd \
+	-c "${CONFIG}" \
+	-f \
+	< /dev/null
