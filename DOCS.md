@@ -2,9 +2,10 @@
 
 ## How to use
 
-1. Set the `domain` option, e.g., `mynetwork.local`.
-2. Save the add-on configuration by clicking the "SAVE" button.
-3. Start the add-on.
+1. Set the `community` option, e.g., `public`.
+2. Set the port under network, e,g., `161`.
+3. Save the add-on configuration by clicking the "SAVE" button.
+4. Start the add-on.
 
 ## Configuration
 
