@@ -9,10 +9,7 @@ CONFIG="/etc/snmp/snmpd.conf"
 	echo "access MyROGroup ''      any       noauth    exact  all    none   none"
 } > "${CONFIG}"
 
-#bashio::log.info `cat ${CONFIG}`
 bashio::log.info "Starting SNMP server..."
-
-#bashio::log.info `/usr/sbin/snmpd --help`
 
 exec /usr/sbin/snmpd \
 	-c "${CONFIG}" \
