@@ -1,9 +1,15 @@
 # Home Assistant Add-on: SNMP server
 
+## Installation
+
+Adding this add-on repository to your Home Assistant instance is pretty easy. Follow the official instructions on the website of Home Assistant, and use the following URL:
+
+https://github.com/darthsebulba04/hassio-snmpd
+
 ## How to use
 
-1. Set the `community` option, e.g., `public`.
-2. Set the port under network, e,g., `161`.
+1. Set the `community` option, eg, `public`.  Fill in the other options if you wish.
+2. Set the port under network, eg, `161`.
 3. Save the add-on configuration by clicking the "SAVE" button.
 4. Start the add-on.
 
@@ -16,11 +22,26 @@ Example add-on configuration:
 
 ```yaml
 community: public
+location: Home
+name: RPi
+email: rpi@me.com
 ```
 
 ### Option: `community`
 
 The community your SNMP monitor is looking for, eg `public`
+
+### Option `location`
+
+The SNMP location, eg `Home`
+
+### Option `name`
+
+The SNMP contact name, eg `RPi`
+
+### Email `email`
+
+The SNMP contact email address, eg `rpi@me.com`
 
 ## Support
 

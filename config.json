@@ -3,14 +3,21 @@
   "version": "1",
   "slug": "snmp",
   "description": "SNMP v2c server for monitoring",
+  "url": "https://github.com/darthsebulba04/hassio-snmpd",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "before",
   "boot": "auto",
   "options": {
-    "community": "public"
+    "community": "public",
+    "location": "",
+    "name": "",
+    "email": ""
   },
   "schema": {
-    "community": "str"
+    "community": "str",
+    "location": "str",
+    "name": "str",
+    "email": "str"
   },
   "ports": {
     "161/udp": 161
