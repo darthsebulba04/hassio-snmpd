@@ -4,7 +4,7 @@
   "slug": "snmpd",
   "description": "SNMP v2c server for monitoring",
   "url": "https://github.com/darthsebulba04/hassio-snmpd",
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "arch": ["armhf", "armv7", "amd64", "i386"],
   "startup": "services",
   "boot": "auto",
   "options": {
@@ -22,5 +22,5 @@
   "ports": {
     "161/udp": 161
   },
-  "image": "darthsebulba04/image-{arch}-snmpd"
+  "image": "darthsebulba04/hassio-snmpd"
 }
