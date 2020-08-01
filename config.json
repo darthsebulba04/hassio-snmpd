@@ -1,6 +1,6 @@
 {
   "name": "SNMP Server",
-  "version": "1",
+  "version": "1.0.0",
   "slug": "snmpd",
   "description": "SNMP v2c server for monitoring",
   "url": "https://github.com/darthsebulba04/hassio-snmpd",
