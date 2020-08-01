@@ -22,5 +22,5 @@
   "ports": {
     "161/udp": 161
   },
-  "image": "darthsebulba04/hassio-snmpd"
+  "image": "darthsebulba04/{arch}-hassio-snmpd"
 }
