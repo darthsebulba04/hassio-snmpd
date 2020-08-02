@@ -2,9 +2,11 @@
 
 ## Installation
 
-Adding this add-on repository to your Home Assistant instance is pretty easy. Follow the official instructions on the website of Home Assistant, and use the following URL:
+From the supervisor add-on store, add the following repository:
 
-https://github.com/darthsebulba04/hassio-snmpd
+https://github.com/darthsebulba04/hassio-addons
+
+Then, in the new list of add-ons, install `SNMP Server`
 
 ## How to use
 
